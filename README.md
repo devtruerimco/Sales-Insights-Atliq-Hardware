@@ -56,6 +56,14 @@ transactions.xlsx: product_code,	customer_code,	market_code,	order_date,	sales_q
 
    SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020and transactions.market_code="Mark001";
 
+
+
+## DASHBOARD
+
+![plot](./sales_insight_dashboard.png)
+
+
+
 ## End Result:
 An automated dashboard providing quick latest and accurate sales insights in order to support data driven decision making.
 The insights contain the followin queries:
